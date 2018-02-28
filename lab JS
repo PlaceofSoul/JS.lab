@@ -1,0 +1,109 @@
+/* codepen.io */
+
+/* Given two strings, a and b, return the result of putting them together in the order abba, e.g. "Hi" and "Bye" returns "HiByeByeHi". */
+
+
+  var stringOne = "Hi"
+  var stringTwo = "Bye"
+
+  console.log(stringOne+stringTwo+stringTwo+stringOne)
+
+  var stringThree = "Yo"
+  var stringFour = "Alice"
+
+  console.log(stringThree+stringFour+stringFour+stringThree)
+
+  var stringFive = "What"
+  var stringSix = "Up"
+
+  coonsole.log(stringFive+stringSix+stringSix+stringfive)
+
+/* Given a string, return true if it ends in "ly". */
+
+  var stringSeven = "oddly"
+  var stringEight = "y"
+  var stringNine = "oddy"
+
+  console.log(stringSeven.endsWith("ly"))
+  console.log(stringEight.endsWith("ly"))
+  console.log(stringNine.endsWith("ly"))
+
+/* Given a string of even length, return the first half. So the string "WooHoo" yields "Woo". */
+
+  var stringTen = "WooHoo"
+  var stringEleven = "HelloThere"
+  var stringTwelve = "abcdef"
+
+  console.log(stringTen.slice(0,3))
+  console.log(stringEleven.slice(0,5))
+  console.log(stringTwelve.slice(0,3))
+
+/* Given a string, return a "rotated right 2" version where the last 2 chars are moved to the start. The string length will be at least 2. */
+
+  var x = "Hello"
+
+  console.log(x.substring(3,5) + x.substring(0,3))
+
+  var y = "java"
+
+  console.log(y.substring(2) + y.substring(0,2))
+
+  var z = "Hi"
+
+  console.log(z.substring(0,2))
+
+/*  Given two strings, append them together (known as "concatenation") and return the result. However, if the concatenation creates a double-char, then omit one of the chars, so "abc" and "cat" yields "abcat". */
+
+  var hello1 = "abc"
+
+  console.log(hello1.concat("cat"))
+
+  var hello2 = "dog"
+
+  console.log(hello2.concat("cat"))
+
+  var hello3 = "abc"
+
+  console.log(hello3.concat(""))
+
+/* Given a string, return true if the first 2 chars in the string also appear at the end of the string, such as with "edited". */
+
+  var ant1 = "edited"
+
+  console.log(ant1.endsWith("ed"))
+
+  var ant2 = "edit"
+
+  console.log(ant2.endsWith("ed"))
+
+  var ant3 = "ed"
+
+  console.log(ant3.endsWith("ed"))
+
+  /* Given a string, if one or both of the first 2 chars is 'x', return the string without those 'x' chars, and otherwise return the string unchanged. This is a little harder than it looks. */
+
+  var elf1 = "xHi"
+
+  console.log(elf1.split("x"))
+
+  var elf2 = "Hxi"
+
+  console.log(elf2.split("x"))
+
+  var elf3 = "Hi"
+
+  console.log(elf3.split("x"))
+
+  /*   Given a string of even length, return a string made of the middle two chars, so the string "string" yields "ri". The string length will be at least 2. */
+
+  var rock1 = "string"
+
+  console.log(rock1.substr(2,2))
+
+  var rock2 = "code"
+
+  console.log(rock2.substr(1,2))
+
+  var rock3 = "Practice"
+
+  console.log(rock3.substr(3,2))
